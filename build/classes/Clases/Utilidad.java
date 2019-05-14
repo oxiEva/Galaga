@@ -160,4 +160,59 @@ public class Utilidad {
         return subraza;            
     }
     
+    public ArrayList<String> getUsuario() throws SQLException{
+        ArrayList<String> usuario = new ArrayList<String>();
+        Statement stmt;
+        
+        Connection con = this.conectarMySQL();
+                String query = "SELECT nombre FROM Usuario;";
+        
+        stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(query);
+        while (rs.next()) {
+            usuario.add(rs.getString("nombre"));
+        }
+        return usuario;            
+    }
+    
+    public ArrayList<String> getUsuario() throws SQLException{
+        ArrayList<String> usuario = new ArrayList<String>();
+        Statement stmt;
+        
+        Connection con = this.conectarMySQL();
+                String query = "INSERT INTO Usuario nombre,email,contraseña,fechaNacimiento,fechaRegistro,lema;";
+        
+        stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(query);
+        while (rs.next()) {
+            usuario.add(rs.getString("nombre"));
+            usuario.add(rs.getString("email"));
+            usuario.add(rs.getString("contraseña"));
+            usuario.add(rs.getString("fechaNacimiento"));
+            usuario.add(rs.getString("fechaRegistro"));
+            usuario.add(rs.getString("lema"));
+        }
+        return usuario;            
+    }
+    
+    public ArrayList<String> getHabilidadespecial() throws SQLException{
+        ArrayList<String> habilidadespecial = new ArrayList<String>();
+        Statement stmt;
+        
+        Connection con = this.conectarMySQL();
+                String query = "SELECT nombreHabEsp FROM HabilidadEspecial;";
+        
+        stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(query);
+        while (rs.next()) {
+            getHabilidadespecial.add(rs.getString("nombre"));
+            getHabilidadespecial.add(rs.getString("email"));
+            getHabilidadespecial.add(rs.getString("contraseña"));
+            getHabilidadespecial.add(rs.getString("fechaNacimiento"));
+            getHabilidadespecial.add(rs.getString("fechaRegistro"));
+            getHabilidadespecial.add(rs.getString("lema"));
+        }
+        return getHabilidadespecial;            
+    }
+    
 }
