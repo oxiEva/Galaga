@@ -209,7 +209,6 @@ public class Utilidad {
             getHabilidadespecial.add(rs.getString("email"));
             getHabilidadespecial.add(rs.getString("contraseña"));
             getHabilidadespecial.add(rs.getString("fechaNacimiento"));
-            getHabilidadespecial.add(rs.getString("fechaRegistro"));
             getHabilidadespecial.add(rs.getString("lema"));
         }
         return getHabilidadespecial;            
