@@ -6,6 +6,8 @@
 package Clases;
 
 import java.awt.BorderLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -28,8 +30,14 @@ public class Galaga {
         // Creando el Marco        
         JFrame frame = new JFrame("Frame");       
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
-        frame.setSize(600, 400);        
- 
+        frame.setSize(600, 400);
+        frame.setTitle("Galaga");
+        
+        //imagen para la aplicación
+        Image im = Toolkit.getDefaultToolkit().getImage("img/nave.png");
+        frame.setIconImage(im);
+        frame.setVisible(true);
+
         // Creando MenuBar y agregando componentes   
         JMenuBar mb = new JMenuBar();       
         JMenu m1 = new JMenu("Juego");       
