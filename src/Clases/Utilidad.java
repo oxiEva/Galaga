@@ -29,7 +29,11 @@ public class Utilidad {
     public String hostname = "localhost";
 
     // Puerto
+<<<<<<< HEAD
     public String port = "3307";
+=======
+    public String port = "3306";
+>>>>>>> 5b81b6d934a277642c960f9c354f4328e084deb8
 
     // Ruta de nuestra base de datos (desactivamos el uso de SSL con "?useSSL=false")
     public String url = "jdbc:mysql://" + hostname + ":" + port + "/" + database + "?useSSL=false";
@@ -38,7 +42,11 @@ public class Utilidad {
     public String username = "root";
 
     // Clave de usuario
+<<<<<<< HEAD
     public String password = "oxiev";
+=======
+    public String password = "";
+>>>>>>> 5b81b6d934a277642c960f9c354f4328e084deb8
     
     
     public Connection conectarMySQL() {
