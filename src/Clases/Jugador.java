@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 public class Jugador extends Usuario{
     
+    private String nombre;
     private ArrayList[] naveArrayLists;
     private ArrayList[] equipoArrayLists;
     private int puntuacion;
@@ -20,7 +21,8 @@ public class Jugador extends Usuario{
     private int victorias;
 
 
-
+    
+    
     public ArrayList[] getNaveArrayLists() {
         return naveArrayLists;
     }
