@@ -36,7 +36,7 @@ Esto nos bajará el proyecto en la carpeta ekon en el directorio en el que estem
 
 **3.** Descargar del bucket de s3 el contenido de "ekon-prod/build/modules" (amb el seu contingut) y ponerlo en la raíz del proyecto (asegurarte que la carpeta modules esté en la raíz del proyecto)
 
-![update from repo](img/aws-console.png)
+![update from repo](img/aws_console.png)
 
 **4.** Descarregar del bucket de s3 "ekon-prod/build" el fitxer **oy_constantes.java** posar-lo a dins de scripts/include de nuestro proyecto.
 
